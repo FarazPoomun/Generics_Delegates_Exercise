@@ -32,9 +32,9 @@ namespace Generics_Delegates_Exercise
             foreach (var kv in _carOrders)
             {
                 var carInstance = kv.Key;
-                var info = $"Car Brand: {carInstance.CarBrand}{Environment.NewLine}";
+                var info = $"Car Brand: {carInstance.Brand}{Environment.NewLine}";
                 info += $"Car Year: {carInstance.Year:d}{Environment.NewLine}";
-                info += $"Car Color: {carInstance.CarColor}";
+                info += $"Car Color: {carInstance.Color}";
 
               Console.WriteLine($"{info}");
               Console.WriteLine($"Quantity {kv.Value} {Environment.NewLine}");

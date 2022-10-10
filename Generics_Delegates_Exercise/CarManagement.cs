@@ -51,9 +51,9 @@ namespace Generics_Delegates_Exercise
                     var carInstance = carKV.Value;
 
                     Console.WriteLine($"Inventory Id: {carKV.Key}");
-                    var info = $"Car Brand: {carInstance.CarBrand}{Environment.NewLine}";
+                    var info = $"Car Brand: {carInstance.Brand}{Environment.NewLine}";
                     info += $"Car Year: {carInstance.Year:d}{Environment.NewLine}";
-                    info += $"Car Color: {carInstance.CarColor}";
+                    info += $"Car Color: {carInstance.Color}";
 
                     Console.WriteLine($"{info}"); Console.WriteLine();
                 }

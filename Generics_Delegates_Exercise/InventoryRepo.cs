@@ -12,16 +12,16 @@ namespace Generics_Delegates_Exercise
             {
                 { ++id, new Car()
                     {
-                        CarBrand = Brand.Toyota,
+                        Brand = Brand.Toyota,
                         Year = DateTime.Today,
-                        CarColor =  Color.Silver
+                        Color =  Color.Silver
                     }
                 },
                 { ++id, new Car()
                     {
-                        CarBrand = Brand.Tesla,
+                        Brand = Brand.Tesla,
                         Year = DateTime.Today.AddDays(-19),
-                        CarColor =  Color.White
+                        Color =  Color.White
                     }
                 },
             };
@@ -30,16 +30,16 @@ namespace Generics_Delegates_Exercise
             {
                 { ++id, new MotorBike()
                     {
-                        MotorBikeBrand = Brand.Honda,
+                        Brand = Brand.Honda,
                         Year = DateTime.Today,
-                        MotorBikeColor =  Color.Silver
+                        Color =  Color.Silver
                     }
                 },
                 { ++id, new MotorBike()
                     {
-                        MotorBikeBrand = Brand.BMW,
+                        Brand = Brand.BMW,
                         Year = DateTime.Today.AddDays(-19),
-                        MotorBikeColor =  Color.White
+                        Color =  Color.White
                     }
                 },
             };
