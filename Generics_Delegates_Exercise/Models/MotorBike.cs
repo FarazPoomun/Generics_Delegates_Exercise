@@ -7,6 +7,7 @@ namespace Generics_Delegates_Exercise
         public Brand Brand { get; set; }
         public DateTime Year { get; set; }
         public Color Color { get; set; }
+        public int CountInStock { get; set; }
 
         public bool Equals(MotorBike other)
         {

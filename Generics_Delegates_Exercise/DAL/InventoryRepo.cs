@@ -32,14 +32,16 @@ namespace Generics_Delegates_Exercise
                     {
                         Brand = Brand.Honda,
                         Year = DateTime.Today,
-                        Color =  Color.Silver
+                        Color =  Color.Silver,
+                        CountInStock = 10
                     }
                 },
                 { ++id, new MotorBike()
                     {
                         Brand = Brand.BMW,
                         Year = DateTime.Today.AddDays(-19),
-                        Color =  Color.White
+                        Color =  Color.White,
+                        CountInStock = 12
                     }
                 },
             };

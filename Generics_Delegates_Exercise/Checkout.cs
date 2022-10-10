@@ -14,7 +14,8 @@ namespace Generics_Delegates_Exercise
 
         public void AddToCheckout(Car car)
         {
-            //Not the best way to check if obj is in dictionary, ideally we would have to implement a hashkey for the object 
+            //Not the best way to check if obj is in dictionary (defeats the purpose of a dictionary if we have to loop to see if a key matches)
+            //ideally we would have to implement a hashkey for the object
             foreach (var keyValue in _carOrders)
             {
                 if (keyValue.Key.Equals(car))
@@ -36,8 +37,8 @@ namespace Generics_Delegates_Exercise
                 info += $"Car Year: {carInstance.Year:d}{Environment.NewLine}";
                 info += $"Car Color: {carInstance.Color}";
 
-              Console.WriteLine($"{info}");
-              Console.WriteLine($"Quantity {kv.Value} {Environment.NewLine}");
+                Console.WriteLine($"{info}");
+                Console.WriteLine($"Quantity {kv.Value} {Environment.NewLine}");
             }
         }
     }

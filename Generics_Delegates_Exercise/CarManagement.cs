@@ -12,6 +12,7 @@ namespace Generics_Delegates_Exercise
 
             var allCarsInInventory = InventoryRepo.InventoryCars;
             var checkOutInstance = new Checkout();
+            Console.WriteLine();
 
             while (true)
             {
@@ -65,7 +66,7 @@ namespace Generics_Delegates_Exercise
                 if (inputId == quitValue) break;
 
                 checkOutInstance.AddToCheckout(allCarsInInventory[inputId]);
-                Console.WriteLine("Item has been added to checkout");
+                Console.WriteLine("Item has been added to checkout!");
             }
         }
     }
