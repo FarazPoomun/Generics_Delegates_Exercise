@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Generics_Delegates_Exercise
 {
@@ -11,8 +8,9 @@ namespace Generics_Delegates_Exercise
         public void Execute()
         {
             const int MENU_OPT_INVENTORY_CAR = 1;
-            var allCarsInInventory = InventoryRepo.InventoryCars;
+            const int MENU_OPT_VIEW_CHECKOUT = 2;
 
+            var allCarsInInventory = InventoryRepo.InventoryCars;
             var checkOutInstance = new Checkout();
 
             while (true)
@@ -20,7 +18,8 @@ namespace Generics_Delegates_Exercise
                 Console.WriteLine($"Please Choose: {Environment.NewLine}");
 
                 Console.WriteLine("1. See Car inventory");
-                Console.WriteLine($"2. See checkout basket {Environment.NewLine}");
+                Console.WriteLine($"2. See checkout basket");
+                Console.WriteLine($"-1. Go back{Environment.NewLine}");
 
                 var menuSelection = int.Parse(Console.ReadLine());
 
@@ -28,13 +27,16 @@ namespace Generics_Delegates_Exercise
                 {
                     DisplayInventory(allCarsInInventory, checkOutInstance);
                 }
-                else
+                else if(menuSelection == MENU_OPT_VIEW_CHECKOUT)
                 {
                     checkOutInstance.PrintOrders();
                     Console.WriteLine();
                 }
+                else
+                {
+                    break;
+                }
             }
-
         }
 
         void DisplayInventory(Dictionary<int, Car> allCarsInInventory, Checkout checkOutInstance)

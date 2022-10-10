@@ -32,16 +32,14 @@ namespace Generics_Delegates_Exercise
                     {
                         MotorBikeBrand = Brand.Honda,
                         Year = DateTime.Today,
-                        MotorBikeColor =  Color.Silver,
-                        CC = 1000
+                        MotorBikeColor =  Color.Silver
                     }
                 },
                 { ++id, new MotorBike()
                     {
                         MotorBikeBrand = Brand.BMW,
                         Year = DateTime.Today.AddDays(-19),
-                        MotorBikeColor =  Color.White,
-                        CC = 1100
+                        MotorBikeColor =  Color.White
                     }
                 },
             };
